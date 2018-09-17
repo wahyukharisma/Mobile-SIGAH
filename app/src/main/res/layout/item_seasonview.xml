@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    android:id="@+id/season_id">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:orientation="vertical"
+        android:background="@color/line">
+
+        <ImageView
+            android:id="@+id/itmPictureSeason"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/sigahlogo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:id="@+id/txtSeasonName"
+                android:layout_width="150dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="SEASON NAME"
+                android:textColor="@color/black"
+                android:textSize="13dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDateStart"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Start_Date"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="-"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtDateEnd"
+                    android:layout_width="70dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="End_Date"
+                    android:textColor="@color/black"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/Hint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtRoomNameSeason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Superior Room "
+                    android:textColor="@color/main1"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text=" only IDR "
+                    android:textColor="@color/black"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/txtPriceSeason"
+                    android:layout_width="150dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Price"
+                    android:textColor="@color/main1"
+                    android:textSize="13dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="1dp"
+                android:background="@color/Hint" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

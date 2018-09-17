@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.wk.sigah.controller.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/background_register">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/sigahlogo" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="SIGN UP"
+                        android:textColor="@color/main1"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etUsername"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/user"
+                        android:hint="Username"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Hint"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/pasword"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Hint"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etOpassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/repeat_icon"
+                        android:hint="Confirm Password"
+                        android:inputType="textPassword"
+                        android:maxLength="20"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Hint"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="25dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/name_icon"
+                        android:hint="Name"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Hint"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etIdentitiy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/identitiy_icon"
+                        android:hint="Identitiy Number"
+                        android:inputType="number"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Hint"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/email_icon"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Hint"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/phone_icon"
+                        android:hint="Phone Number"
+                        android:inputType="number"
+                        android:maxLength="12"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Hint"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:drawableRight="@drawable/adress_icon"
+                        android:hint="Address"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:maxLines="1"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/Hint"
+                        android:textSize="15dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/notification_register"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+
+                    <Button
+                        android:id="@+id/btnRegister"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button_style_one"
+                        android:onClick="onClickRegister"
+                        android:text="Register" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

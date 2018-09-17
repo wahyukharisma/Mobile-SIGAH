@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+    tools:context="com.example.wk.sigah.controller.LoginActivity"
+    android:background="@drawable/background_login">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="48dp"
+                android:padding="16dp"
+                android:src="@drawable/sigahlogo" />
+            <TextView
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text="Username"
+                android:layout_marginLeft="13dp"
+                android:textSize="15sp"
+                android:gravity="left"/>
+            <EditText
+                android:id="@+id/ETusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/user"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="@color/TextLogin"
+                android:layout_marginTop="0dp"
+                android:padding="8dp"
+                android:textColor="@color/TextLogin"
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="10dp"
+                >
+            </View>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text="Password"
+                android:layout_marginLeft="13dp"
+                android:textSize="15sp" />
+            <EditText
+                android:id="@+id/ETpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawableLeft="@drawable/pasword"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHint="@color/TextLogin"
+                android:padding="8dp"
+                android:textColor="@color/TextLogin"
+                style="@style/Base.TextAppearance.AppCompat.Widget.ActionBar.Subtitle" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line"
+                android:layout_marginTop="2dp">
+            </View>
+
+            <TextView
+                android:id="@+id/link1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/black"
+                android:text="@string/link_forget_password"
+                android:layout_gravity="right"
+                android:linksClickable="true"
+                android:onClick="onClickForgotPass"/>
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:clickable="true"
+                android:padding="16dp"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/background_login_two"
+                android:textAllCaps="false"
+                android:onClick="onClickLogin"
+                />
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:autoLink="web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_signup"
+                android:text="Sign up"
+                android:textColor="@color/main1"
+                android:textAllCaps="false"
+                android:padding="16dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClickSignUp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

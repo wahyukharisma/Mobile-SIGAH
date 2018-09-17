@@ -1,0 +1,75 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wk.sigah.controller.FragmentSetting"
+    android:background="@color/colorPrimary">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/sigahlogo"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/txtAbout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="About"
+                    android:clickable="true"
+                    android:onClick="onClickAbout"/>
+                <TextView
+                    android:id="@+id/txtTC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Terms and Conditions"
+                    android:clickable="true"
+                    android:onClick="onClickTC"/>
+                <TextView
+                    android:id="@+id/txtPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Privacy Policy"
+                    android:clickable="true"
+                    android:onClick="onClickPP"/>
+                <TextView
+                    android:id="@+id/txtGoWeb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="Go to Website"
+                    android:clickable="true"
+                    android:onClick="onClickGW"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

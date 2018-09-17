@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal">
+
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/Hint"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/txtRoomName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Type"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="95dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDR "
+                android:textColor="@color/main1"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/txtPriceRoom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price Room"
+                android:textColor="@color/main1"
+                android:textSize="16sp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+            <TextView
+                android:id="@+id/txtDescDetil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lorem_ipsum"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imgDetilRoom"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/room_doubledeluxe"
+        android:padding="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/sigahlogo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:gravity="center"
+                android:text="P.Mangkubumi No.18, Yogyakarta 55233"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:gravity="center"
+                android:text="Phone.(0274)487711"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:clickable="true"
+                android:onClick="onClickBackListener"
+                android:src="@drawable/back_icon" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2dp"
+                android:background="@color/Hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25sp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Report New Customer"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginRight="15dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Choose Year "
+                    android:textColor="@color/black" />
+
+                <Spinner
+                    android:id="@+id/spinYear"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_button_yellow"></Spinner>
+
+                <Button
+                    android:id="@+id/btnCreate"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/button_style_one"
+                    android:onClick="onClickBtnCreate"
+                    android:text="CREATE"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@color/main1">
+
+                            <TableRow>
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="No"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="Month"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="Total"
+                                    android:textColor="@color/black"
+                                    android:textSize="17sp"
+                                    android:textStyle="bold" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/line">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="1"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="January"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalJan"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/Hint">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="2"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="February"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalFeb"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/line">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="3"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="March"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalMar"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/Hint">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="4"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="April"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalApr"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/line">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="5"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="May"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalMay"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/Hint">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="6"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="June"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalJun"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/line">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="7"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="July"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalJul"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/Hint">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="8"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="August"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalAug"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/line">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="9"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="September"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalSep"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/Hint">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="10"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="October"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalOct"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/line">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="11"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="November"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalNov"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/Hint">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text="12"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="December"
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalDec"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black" />
+                            </TableRow>
+
+                            <TableRow android:background="@color/main1">
+
+                                <TextView
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:width="50dp"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text=""
+                                    android:textColor="@color/black" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalAll"
+                                    android:layout_marginTop="5dp"
+                                    android:width="150dp"
+                                    android:gravity="center"
+                                    android:text="0"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+                            </TableRow>
+                        </TableLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="500dp"
+                            android:layout_marginTop="50dp"
+                            android:orientation="vertical">
+
+                            <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/chartReportTwo"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="10dp" />
+                        </LinearLayout>
+
+                        <Button
+                            android:layout_gravity="right"
+                            android:id="@+id/btnCreatePdf"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="30dp"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/button_style_one"
+                            android:text="Create PDF"
+                            android:textSize="12sp"
+                            android:textColor="@android:color/black"
+                            android:onClick="onClickBtnCreatePdf"/>
+                    </LinearLayout>
+
+                </ScrollView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

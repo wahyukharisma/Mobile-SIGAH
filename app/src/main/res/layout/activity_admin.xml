@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wk.sigah.controller.Admin"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="vertical"
+            android:background="@color/line">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/sigahlogo"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:textColor="@color/black"
+                android:text="P.Mangkubumi No.18, Yogyakarta 55233"
+                android:gravity="center"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:textColor="@color/black"
+                android:text="Phone.(0274)487711"
+                android:gravity="center"
+                android:textSize="12sp"/>
+            <TextView
+                android:id="@+id/txtLogOut"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="@color/black"
+                android:text="Log Out"
+                android:gravity="end"
+                android:layout_marginRight="10dp"
+                android:clickable="true"
+                android:onClick="onClickLogOutListener"/>
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="25dp">
+                <LinearLayout
+                    android:id="@+id/report1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:onClick="onClickReportOne">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="140dp"
+                        android:src="@drawable/toppel"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/line"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:textColor="@color/main1"
+                            android:text="Report Top 5 Customer"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Showing the top 5 customers with the top reservation amount and total payment"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/report2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:onClick="onClickReportTwo">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/newpel" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/line"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:textColor="@color/main1"
+                            android:text="Report Number of Customer"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Show the number of customers who make transactions or reservation in a given year"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/report3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:onClick="onClickReportThree">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/pelinroom" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/line"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:textColor="@color/main1"
+                            android:text="Report Customer in Specific Room"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Show the number of customers making reservations in a particular room by group or personal"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/report4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:onClick="onClickReportFour">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/income" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/line"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:textColor="@color/main1"
+                            android:text="Report Show Income by Customer"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Show monthly amount of income and type of reservation (personal or group)"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/report5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="20dp"
+                    android:onClick="onClickReportFive">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:src="@drawable/income" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@color/line"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:textColor="@color/main1"
+                            android:text="Report Income Branch"/>
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:textColor="@color/black"
+                            android:text="Displays annual revenue amounts on all branches"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

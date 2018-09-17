@@ -1,0 +1,634 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/sigahlogo"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:textColor="@color/black"
+            android:text="P.Mangkubumi No.18, Yogyakarta 55233"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:textColor="@color/black"
+            android:text="Phone.(0274)487711"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/back_icon"
+            android:clickable="true"
+            android:onClick="onClickBackListener"/>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Hint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:textColor="@color/black"
+            android:text="Report Monthly Income"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:gravity="right">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:textColor="@color/black"
+                android:text="Choose Year "/>
+            <Spinner
+                android:id="@+id/spinYear"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/background_button_yellow"></Spinner>
+            <Button
+                android:id="@+id/btnCreate"
+                android:layout_marginLeft="10dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_style_one"
+                android:text="CREATE"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:onClick="onClickBtnCreate"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/main1"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp">
+                        <TableRow>
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="No"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="Month"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="Group (IDR)"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="Personal (IDR)"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:width="80dp"
+                                android:gravity="center"
+                                android:text="Total (IDR)"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/Hint"
+                            android:layout_marginTop="5dp">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="1"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="January"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpJan"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerJan"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotJan"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/line">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="2"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="February"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpFeb"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerFeb"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotFeb"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/Hint">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="3"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="March"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpMar"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerMar"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotMar"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/line">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="4"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="April"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpApr"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerApr"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotApr"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/Hint">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="5"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="May"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpMay"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerMay"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotMay"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/line">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="6"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="June"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpJun"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerJun"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotJun"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/Hint">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="7"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="July"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpJul"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerJul"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotJul"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/line">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="8"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="Augst"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpAug"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerAug"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotAug"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/Hint">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="9"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="September"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpSep"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerSep"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotSep"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/line">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="10"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="October"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpOct"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerOct"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotOct"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/Hint">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="11"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="November"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpNov"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerNov"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotNov"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/line">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text="12"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="December"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtGrpDec"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtPerDec"
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                            <TextView
+                                android:id="@+id/txtTotDec"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp" />
+                        </TableRow>
+                        <TableRow
+                            android:background="@color/main1"
+                            android:layout_marginTop="5dp">
+                            <TextView
+                                android:gravity="center"
+                                android:width="25dp"
+                                android:textColor="@color/black"
+                                android:text=""
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text=""
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text=""
+                                android:textSize="15sp" />
+                            <TextView
+                                android:gravity="center"
+                                android:width="85dp"
+                                android:textColor="@color/black"
+                                android:text="TOTAL"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/txtTotAll"
+                                android:gravity="center"
+                                android:width="80dp"
+                                android:textColor="@color/black"
+                                android:text="0"
+                                android:textSize="15sp"
+                                android:textStyle="bold"/>
+                        </TableRow>
+
+                    </TableLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="500dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="50dp">
+                        <com.github.mikephil.charting.charts.BarChart
+                            android:id="@+id/chartReportFour"
+                            android:layout_height="match_parent"
+                            android:layout_width="match_parent"
+                            android:padding="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

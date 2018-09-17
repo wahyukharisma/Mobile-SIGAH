@@ -1,0 +1,189 @@
+<resources>
+    <string name="app_name">SIGAH</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="meeting_room">A conference hall, conference room, or meeting room is a room provided for singular events such as business conferences and meetings. It is commonly found at large hotels and convention centers though many other establishments, including even hospitals, have one.</string>
+    <string name="diner_package">Enjoy a drink in our spacious lounge bar, is a truly enjoyable experience – the views of the natural harbour, no ships just a variety of birds and may be even spot a stray seal or penguin and then across the water with the opposite side comprising of natural terrain, with the names of ships picked out by natural stones will help to ensure that you will have a “relaxing drink”
+
+There is a full range of bar drinks including a wide selection of spirits, Whisky, Brandy and Liqueurs, soft drinks and  beer including and Falkland Islands only real ale.  The wine list includes a variety and styles of wine including the famous Montes premium wine produced in Chile, with wines by the bottle and glass.
+
+A selection of teas and coffees are available throughout the day in the Lounge Bar.</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="link_forget_password"><a href=".ForgotPassword">Forgot password?</a></string>
+    <string name="notification_register">By clicking the button, you acknowledge \nthat you have read and agreed to the \nTerms &amp; Condtions and Privacy \nPolicy of Grand Atma Hotel </string>
+    <string name="lorem_ipsum2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia neque egestas ipsum fermentum euismod id nec lectus. Etiam odio libero, tincidunt commodo volutpat a, porttitor eget ex. Mauris tempor porta nunc. Sed finibus neque a lectus aliquam, mattis feugiat neque luctus. Nunc ut lorem dictum, molestie odio ac, sagittis arcu. Nullam viverra sapien at odio convallis aliquam. Vivamus id pulvinar orci. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum suscipit sodales efficitur. Duis lacinia neque mollis dui ultricies rhoncus ut in neque.
+
+Vivamus ornare nisi ex, ut tristique neque ultricies at. Fusce commodo, ipsum a rutrum gravida, orci lacus convallis eros, non laoreet urna massa ut sem. Sed eu varius nisl. Integer pharetra risus mauris, a ultricies tellus auctor dignissim. Nulla facilisi. In vel tincidunt orci. Duis in mauris cursus nibh imperdiet placerat. Suspendisse potenti. Nunc sodales ante id justo venenatis, vitae faucibus quam commodo. Cras ullamcorper, odio nec semper molestie, urna risus lacinia purus, quis ullamcorper eros purus sed mauris. Fusce varius sollicitudin posuere. Aenean velit augue, ullamcorper sed pellentesque a, sodales eu ipsum. Sed eu ipsum volutpat justo varius vulputate. Ut id est congue, varius massa nec, feugiat purus. Nulla ut sapien cursus, posuere lectus sit amet, varius velit. Integer sit amet dolor dignissim, sollicitudin est nec, sagittis enim.
+    Quisque malesuada quis risus ac fermentum. Integer venenatis neque lorem, sed tempus ipsum dictum vitae. Integer mi enim, aliquam in ipsum sit amet, aliquet ornare dui. Etiam ipsum lorem, semper sed orci vitae, vestibulum rutrum eros. Nunc imperdiet lobortis elementum. Suspendisse sed condimentum nisi. In non mauris eget enim luctus malesuada. Nulla facilisi. In hac habitasse platea dictumst. Praesent et velit condimentum, faucibus erat non, vestibulum dolor. Proin congue sodales fermentum. Vestibulum viverra sit amet metus vel tristique. Praesent ac orci turpis. Integer at felis non lorem euismod aliquet non ut lorem. Pellentesque vehicula dui ultricies dui blandit gravida. Curabitur nec laoreet eros.</string>
+    <string name="changePassword">Data will update after click \nchange password button,\nplease make sure youre remember new password</string>
+    <string name="notifForgotPassword">Your password will delivered into this email, please make sure your email same as when you registered SIGAH account</string>
+    <string name="editProfile">Data will update after click \nedit profile button,please make\nsure youre input correct data</string>
+    <string name="season">Your room is under normal price, what are you waiting for book it now !</string>
+    <string name="cancelMessage">By clicking this button,you acknowledge that you have read and agreed to the Terms &amp; Conditions and Privacy Policy of Grand Atma Hotel</string>
+    <string-array name="sort_history">
+        <item>Booking</item>
+        <item>Success</item>
+    </string-array>
+    <string name="forgotPass">Hello,\nWe received a request to reset your SIGAH password \nFor that we have reset your password accordance with your username,\nplease after this you must change your password through SIGAH apps\nThank You</string>
+    <string name="termsAndConditions"> I.\n
+Area of applicability\n
+1. These general terms and conditions apply for all services and deliveries by the hotel.\n
+2. Should the hotel change its general terms and conditions before the termination of the contract, the updated version is incorporated into the contract if the partner to the contract is informed about this in writing with reference to these legal consequences and the partner does not object to the incorporation within a period of 14 days.\n
+3. The customer’s general terms and conditions shall only form part of this contract if the hotel consents in writing to the incorporation in whole or for individually specified points.\n
+II.\n
+Conclusion of the contract\n
+1. The contract (hereafter also referred to as the “booking”) comes into effect on request from the customer through the acceptance by the hotel. The hotel is free to confirm the booking in writing.\n
+2. If a third party makes the booking for the customer, it is liable to the hotel as the booking party together with the customer as joint debtor.\n
+III.\n
+Services, prices, payment, billing\n
+1. The hotel is obligated to perform the services ordered by the customer and agreed to by the hotel.\n
+2. The customer is obligated to pay the hotel the agreed prices for these and other services enlisted. This also applies for hotel services and expenses induced by it for third parties.\n
+3. If the hotel rescinds with good cause, the customer has no claim for compensation.\n
+4. The agreed prices include the current statutory VAT. Should the rate of VAT applicable to the contractual services increase or decrease after the conclusion of the contract, the prices shall be adjusted accordingly.\n
+5. If the period between the conclusion of the contract and the fulfilment of the contract as defined by the contractual agreements exceeds four months and the general price charged for such services is increased by the hotel, this can increase the contractually agreed price as appropriate, but by 5 % at the most.\n
+6. The hotel is entitled to increase the prices if municipal duties (culture tax, visitor’s tax, etc.) for the accommodation are increased. The price increase is limited to the costs of the abovementioned duties.\n
+7. The hotel’s bills are payable immediately upon receipt of the bill without any deduction, unless other payment terms and conditions are expressly agreed. The hotel is entitled to render accumulated claims for payment at any time and to demand immediate payment. If payment is delayed, the hotel is entitled to claim interest for delay amounting to 10% above the base rate for companies and 5% above the base rate for consumers. The hotel is at liberty to prove that the damages are greater.\n
+8. The subleasing and re-leasing of allocated rooms, other rooms, spaces or cabinets as well as inviting to interviews, sales or similar events require the prior written consent of the hotel, whereby § 540 para. 1 sentence 2 BGB [German Civil Code] shall be waived, provided that the customer is not a consumer.\n
+9. The hotel is entitled to demand upon conclusion of the contract an appropriate advance payment or security deposit in the form of a credit card guarantee or similar from the customer. If an advance payment is not made within the agreed period, the hotel can withdraw from the contract and claim compensation for damages.\n
+10. In justified cases (e.g. outstanding payment by the customer or extending the scope of the contract) the hotel is entitled to demand an increase of the advance payment agreed in the contract or an increased security deposit amounting to the expected costs of the accommodation.\n
+11. The hotel is further entitled to demand an appropriate advance payment or a security deposit from the customer at the beginning and during the customer’s stay, provided that such an advance payment or security deposit was not already paid in accordance with the above provisions.\n
+12. The customer can only settle or lower a claim by the hotel with an undisputed or valid claim.\n
+IV.\n
+Room availability, delivery and return\n
+1. The customer does not acquire any claim for the availability of a particular room, unless the hotel confirmed the availability of a particular room in writing.\n
+- 2 -\n
+2. Booked rooms are available to the customer from 15:00 on the day of arrival. The customer has no claim for earlier
+availability. Guests who arrive before 15:00 can move into their room as early as possible, according to availability.\n
+3. The available rooms are to be taken by 18:00 on the day of arrival. After this time the hotel can book out the rooms to
+others, unless the customer informed the hotel in advance and in writing that they would arrive later. The hotel is entitled
+to demand a guarantee for late arrivals.\n
+4. On the agreed day of departure, check-out is at 12:00 at the latest. After that time the hotel can charge 50 % of the
+agreed price of the room for the additional use of the room up until 18:00, and 100 % from 18:00. Possible further
+claims for compensation for damages by the hotel are reserved.\n
+V.\n
+Withdrawal of the customer from the contract for accommodation
+(cancellation, rescission)\n
+1. A withdrawal by the customer from the contract of accommodation requires the prior written consent of the hotel.
+Without the hotel’s consent, the customer is obligated to pay 90 % of the contractually agreed price for staying
+overnight when the room is not occupied. The customer is at liberty to prove that the abovementioned claim does not
+exist or does not exist to the amount claimed.\n
+2. If a deadline for withdrawal from the contract free of charge was agreed between the hotel and the c ustomer, the
+customer can withdraw from the contract until that point without initiating claims by the hotel for payment or
+compensation for damages. The customer’s right to rescind expires if it does not exercise its right to rescind against
+the hotel by the agreed deadline.\n
+3. Services performed by third parties or special services (e.g. cakes, flowers, etc.) which become useless as a result of the
+cancellation are to be paid by the customer in full.\n
+VI.\n
+Withdrawal of the customer from a contract for an event
+(cancellation, rescission)\n
+1. The customer is only entitled to rescind without charge if this has been agreed with the hotel in writing. Otherwise the hotel is
+entitled in the case of a cancellation to charge the agreed cost of hire for the event rooms in addition to the costs of
+preparation in accordance with the following provisions, provided that it is not possible to book the rooms for another
+customer.\n
+2. The hotel is entitled to charge for the room or the conference package\n
+- at a rate of 50 % for cancellation from 6 months before the beginning of the event,\n
+- at a rate of 80 % for cancellation from 3 months before the beginning of the event,\n
+- at a rate of 90 % for cancellation from 14 days before the beginning of the event.\n
+3. If sales of food and drink are agreed, the hotel is entitled to charge the following additional costs in the case of cancellation:
+If the customer cancels the booking for an event with agreed food and drink between the 8th and 4th week before the event, the
+hotel is entitled to charge 35 % of the food sales lost and 20 % of the drinks sales, and is entitled to charge 80 % of the food and
+drink sales from the 4th weeks until the beginning of the event. The sum for food and drinks is calculated according to the
+number of participants agreed in the contract. If no sum for food and drinks was agreed in the contract, the cheapest three
+course menu from the currently valid event offer shall be used as a basis for the all-inclusive price. The food bill will then be
+calculated using the formula: menu price, banquet x number of people. Drinks sales are calculated as 50 % of the food bill.\n
+4. The customer is at liberty to prove that the hotel is not at any loss as a result of the event not taking place or the loss for the
+hotel is lower than the flat-rate compensation for damages claimed.\n
+VII.\n
+Rescission by the hotel\n
+1. If it has been agreed that the customer can rescind without incurring costs within a defined period, the hotel is also
+entitled to withdraw from the contract within this period.\n
+2. If an agreed advance payment or an advance payment claimed on the basis of these general terms and conditions is not paid by
+the due date, the hotel is also entitled to rescind the contract. Moreover, the hotel can claim compensation for damages from
+the customer.\n
+- 3 -\n
+3. The hotel is entitled to rescind the contract with immediate effect if, for example,\n
+- acts of God and other circumstances which the hotel is not responsible for make the fulfilment of the contract impossible;\n
+- bedrooms and other rooms are intentionally booked using misleading or false statements about facts which are material to\n
+the contract, e.g. who the customer is or the purpose of the stay;\n
+- the hotel has justified reason to assume that the use of hotel services can put at risk the smooth operation of the business,\n
+the security or the public reputation of the hotel, unless this is attributable to the hotel’s sphere of responsibility;
+- the purpose or reason of the stay is illegal;\n
+- there is an unauthorised sub-leasing or re-leasing contrary to III. 7. of these general terms and conditions;\n
+- the hotel is closed;\n
+- proper accommodation and/or proper facilities for an event are not guaranteed because the hotel is being renovated;\n
+- the customer withdraws from a part of the contract in the case of a combined accommodation and event contract.\n
+VIII.\n
+Number of participants, changes to the number of participants and changes to the event location\n
+1. A change in the number of participants registered by the customer of more than 5 % must be notified in writing to the hotel
+catering department at the latest 7 days before the start of the event, so that it can be acknowledged by the hotel in the bill.
+Deviations beyond this shall be based on the original number of participants registered less 5 %.\n
+2. An increase in the number of participants of more than 5 % requires the written consent of the hotel. In the case of an increase,
+the actual number of participants will be used as the basis for the bill.\n
+3. If the number of participants is changed by more than 10 %, the hotel is entitled to exchange the agreed rooms, provided that
+the size of the new rooms is appropriate for the latest number of participants notified and the rooms are comparably equipped.\n
+4. If necessary the hotel is entitled to move the booked event to another room of the same value.\n
+5. If the agreed start and finishing times of the event are changed without the prior written consent of the hotel, the hotel can
+charge for the additional costs for the commitment according to § 315 BGB [German Civil Code], unless the hotel is
+responsible for the change of times.\n
+6. If the event carries on after midnight, the hotel is entitled to charge € 1.50 per guest and hour including VAT. The agreed
+number of participants is the basis for the number of guests.\n
+7. Displays are not allowed in the foyer and in the lobby. The prior written consent of the hotel is required to place advertising
+material.\n
+IX\n
+Own food and drink\n
+1. Only the hotel provides food and drink for events. Prior written agreement is required for exceptions to this. In these cases, a
+sum to cover the overhead costs (“corkage”) shall be charged.\n
+2. The customer is fully liable for the food and drinks brought along being fit for consumption and absolves the hotel in this respect
+from any claims by third parties.\n
+3. The hotel undertakes no liability for the shelf life of the food which is taken away to the hotel after an event at the hotel or
+taken outside the hotel for private consumption.\n
+X.\n
+Technical equipment and connections\n
+1. If the hotel procures technical and other equipment from third parties for the customer on its request, it deals in the name of,
+with the authority of and on behalf of the customer. The customer is liable for handling the equipment with care and for its
+proper return. It absolves the hotel from all claims by third parties for relinquishment of this equipment.\n
+2. The use of the organiser’s own electrical equipment or that of third parties authorised by the organiser which uses the hotel ’s
+electricity network requires the prior written consent of the hotel. Disruptions or damages to the hotel’s technical equipment
+caused by the use of this equipment will be at the cost of the organiser, if the hotel was not responsible. The hotel may include
+and charge at a flat rate the power costs which arise through the use of such equipment.\n
+3. The customer is only entitled to use its own telephone, fax and data carrying equipment with the hotel’s consent. The hotel can
+charge a connection fee for this.\n
+- 4 -\n
+4. Failures in the technical or other equipment provided by the hotel will be corrected as soon as possible. Payments cannot be retained or reduced if the hotel was not responsible for these failures.\n
+5. If the hotel’s technical equipment remains unused because the customer commissioned an external technology company, the hotel is entitled to claim compensation for operating losses.\n
+XI.\n
+Music shows, artist exhibitions\n
+1. If the rights of third parties are affected by events (copyrights, etc.), the customer is obligated to obtain appropriate permission at its own cost before the event is held and to pay fees which accrue (GEMA fees, etc.) directly. Nevertheless, should fees or claims for compensation for damages be made against the hotel for the reasons stated, the organiser absolves the hotel from such fees or claims for compensation for damages.\n
+2. If liability to contribute to the Künstlersozialkasse [Artist’s Social Welfare Fund] is founded on the basis of artists cooperating in the event, the organiser is obligated to pay these contributions directly.\n
+3. If the hotel engages artists for events for the customer, the hotel is entitled to pass on the fees for Artist Social Welfare to the customer.\n
+XII.\n
+Decoration material, exhibits for events\n
+1. Decoration material, exhibits or other, also personal items belonging to the customer who is not himself a guest at the hotel, are kept in the event rooms or hotel at the customer’s own risk. The hotel undertakes no liability for loss, destruction or damage to such objects, except in the case of gross negligence or intent by the hotel. Damages resulting from death, injury to body or health are not included in the exclusion of liability. Moreover, all cases in which there is a duty of safekeeping on the basis of the facts in individual cases, the fulfilment of which is actually required before the contract can be properly carried out and whether the customer may have constant trust that it will be observed (material contractual duty) are excluded.\n
+2. Decoration material brought along must comply with the fire protection regulations. The hotel is entitled to demand an official certificate for this. If the customer does not comply with this request from the hotel, the hotel is entitled to remove and store the decoration material at the cost of the customer. Because of the possible damages, it is only permissible to install and fit items on walls and ceilings with the prior written consent of the hotel.\n
+3. All exhibition or other objects brought by the customer or participants of the event are to be removed by the customer immediately after the event finishes. If the customer does not comply with its duty to remove immediately, the hotel is entitled to remove and store the objects at the cost of the customer. If objects remain in the event room, the hotel can charge the agreed price for the room for the duration in which they stay. The customer may still prove that the damages due are lower and the hotel may still prove that they are higher.\n
+4. The customer is to ensure that any waste is properly disposed of according to the relevant statutory provisions.\n
+5. If the customer commissions the hotel with the disposal of packaging material, the hotel is entitled to charge the customer with the costs arising from this.\n
+XIII.\n
+Customer’s liability\n
+The organiser is liable for all damages to the hotel building and its equipment, which was caused by the organiser, event participants, event visitors, the organiser’s staff or other third parties working in its domain. The hotel can demand appropriate securities (e.g. insurance, deposits, guarantees etc.) from the organiser to protect against exposure to liability.\n
+XIV.\n
+Defects, customer’s obligation to cooperate\n
+Should defects in the deliveries or services by the hotel arise or services are disrupted, the customer is to inform the hotel about this immediately after it is identified so that the hotel is able to remedy the fault as quickly as possible or provide the delivery or service as understood under the contract. If this is not possible because of the nature of the defect/disruption or other compelling reasons, notification of defects must in each case be made to the hotel on return of the rooms at the latest. The customer is obligated to keep damages arising to it as low as possible.\n
+- 5 -\n
+XV.\n
+Hotel’s liability\n
+1. The hotel is liable to carry out its contractual duties with the diligence of a prudent businessperson. Claims by the customer for compensation for damages are excluded. Excluded from this are damages arising from death, injury to body or health. Damages due to the intentional or grossly negligent breach of duty by the hotel are also not included in the exclusion of liability. The exclusion of liability also does not include damages arising from the breach of material contractual duties. Material contractual duties are those which are actually required to be fulfilled before the contract can be properly carried out and the customer may place constant trust in their fulfilment. Further, the strict liability imposed by the Produkthaftungsgesetz [law on product liability] remains unaffected as well as the liability arising from a guarantee potentially taken by the hotel. A breach of duty by the hotel has the same consequences for legal representatives or assistants.\n
+2. The hotel is liable to the customer for things brought in according to the statutory provisions (§§ 701 et. seq. BGB [German Civil Code]).\n
+3. If the customer is provided with a place to put the things in the hotel garage or in a hotel parking place, no contract for safekeeping is created.\n
+4. Claims by the customer against the hotel prescribe after a year from knowledge of the facts which found this claim. Claims for compensation for damages prescribe after 5 years whether or not knowledge of them is received. This shortening of the statutory periods of prescription does not apply in the case of culpable death, injury to body or in the case of liability under the product liability law.\n
+XVI.\n
+Final provisions\n
+1. Alterations and additions to the contract for accommodation and events are required to be in writing to be effective. Waiving the requirement of writing is also required to be in writing.\n
+2. The place of fulfilment and payment is the registered office of the hotel.\n
+3. The place where the hotel has its registered office is the exclusive jurisdiction for commercial issues. Provided that a party to the contract has fulfilled the requirements of § 38 para. 2 ZPO [Code of Civil Procedure] and has no general jurisdiction at in the country, the jurisdiction of the hotel’s registered office applies.\n
+4. The law of the Federal Republic of Germany applies exclusively. The UN Convention on Contracts for the International Sale of Goods and provisions on conflict of laws does not apply.\n
+5. Should individual provisions of the accommodation or event contract or individual provisions of these general terms and conditions for hotel accommodation and for holding events be or become ineffective, the effectiveness of the remaining provisions will remain unaffected by this. Moreover, the statutory provisions apply.\n</string>
+    <string name="ok_text">Yes</string>
+    <string name="no_text">No</string>
+</resources>

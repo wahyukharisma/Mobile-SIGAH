@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:design="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.wk.sigah.controller.Homepage">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"/>
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/nav_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/navigation"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/background_bottom_nav"
+            app:itemTextColor="@color/EditTextLogin"
+            app:itemIconTint="@color/nav_item_colors" />
+
+</android.support.design.widget.CoordinatorLayout>

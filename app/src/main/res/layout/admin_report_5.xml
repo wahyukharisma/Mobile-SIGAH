@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/sigahlogo"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:textColor="@color/black"
+            android:text="P.Mangkubumi No.18, Yogyakarta 55233"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:textColor="@color/black"
+            android:text="Phone.(0274)487711"
+            android:gravity="center"
+            android:textSize="12sp"/>
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:src="@drawable/back_icon"
+            android:clickable="true"
+            android:onClick="onClickBackListener"/>
+        <View
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/Hint"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25sp"
+            android:textColor="@color/black"
+            android:text="Report Branch Income"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textSize="17sp"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:textColor="@color/black"
+                android:text="Date :"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20sp"
+                android:id="@+id/txtThisDate"
+                android:textColor="@color/black"
+                android:text="-"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fragment_container"></RelativeLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
